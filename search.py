@@ -6,7 +6,7 @@ import requests
 
 
 def send_msg(text, user):
-  token = '5960797972:AAF_dQCV91FSvq1mg698lVcUs2LiecUqslY'
+  token = '7182530482:AAFqK8HPClorn0WiDo7xWaLHoA5L8u5MxsE'
 
   # '1901737419:AAHaDsUkEQTZEPOC0RUKYqIhHmQrPJJFAic'
 
@@ -18,7 +18,10 @@ def send_msg(text, user):
   # 1901400593 / Kasia
   # 5781252545
 
-  chat_id2 = '5781252545'
+
+  # 6377487020
+
+  chat_id2 = '6377487020'
   url_req = f'https://api.telegram.org/bot{token}/sendMessage?chat_id={user}&text={text}'
   results = requests.get(url_req)
 
