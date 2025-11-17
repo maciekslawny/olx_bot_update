@@ -100,7 +100,7 @@ def olx_search(word, min_price=0, max_price=99999999, category='', city='', dist
       offer_list = bs.find(class_='css-j0t2x2').find_all(class_='css-1sw7q4x')
 
       for offer in offer_list:
-        offer_name = offer.find(class_='css-u2ayx9').find('h6').get_text().replace("'", "").replace('"', '')
+        offer_name = offer.find(class_='css-u2ayx9').find('h4').get_text().replace("'", "").replace('"', '')
         try:
           offer_link = offer.find(href=True)['href']
           # offer.find('a', class_="detailsLink")
@@ -162,7 +162,7 @@ def olx_search(word, min_price=0, max_price=99999999, category='', city='', dist
       offer_list = bs.find(class_='css-j0t2x2').find_all(class_='css-1sw7q4x')
 
       for offer in offer_list:
-        offer_name = offer.find(class_='css-u2ayx9').find('h6').get_text().replace("'", "").replace('"', '')
+        offer_name = offer.find(class_='css-u2ayx9').find('h4').get_text().replace("'", "").replace('"', '')
         print(offer_name)
         try:
           offer_price = offer.find('p').get_text()
